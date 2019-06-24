@@ -1,17 +1,16 @@
 .calendar {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 80%;
     margin: 0 auto;
-    font-size: 30px
-
+    font-size: 30px;
 }
 
 .calendar__header {
     display: flex;
 }
 
-.calendar__days {
+.calendar__dayOfWeek {
     width: calc(100% / 7);
     border: 1px solid black;
     margin-left: -1px;
@@ -24,14 +23,26 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    height: 800px;
 }
 
-.calendar__date {
+.calendar__day {
     width: calc(100% / 7);
     border: 1px solid black;
     margin-left: -1px;
     margin-top: -1px;
     text-align: center;
     box-sizing: border-box;
-    font-size: 30px
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
 }
+
+.calendar__date {
+    /*flex-basis: 40px;*/
+}
+
+.calendar__event {
+
+}
+
