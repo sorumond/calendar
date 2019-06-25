@@ -1,14 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Calendar} from "./calendar/calendar";
 
-const App: React.FC = () => {
+function App() {
     return (
-        <>
             <Calendar/>
-        </>
     );
-};
+}
 
 export default App;
