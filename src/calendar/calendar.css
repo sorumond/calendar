@@ -4,6 +4,7 @@
     width: 80%;
     margin: 0 auto;
     font-size: 30px;
+    flex-grow: 0;
 }
 
 .calendar__header {
@@ -23,7 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 800px;
 }
 
 .calendar__day {
@@ -36,13 +36,31 @@
     font-size: 30px;
     display: flex;
     flex-direction: column;
+    flex-grow: 0;
+
+
 }
 
 .calendar__date {
-    /*flex-basis: 40px;*/
+
 }
 
 .calendar__event {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    text-align: left;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.calendar__event::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.calendar__task {
+    font-size: 18px;
 
 }
 

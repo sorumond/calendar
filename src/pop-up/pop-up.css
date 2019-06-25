@@ -49,9 +49,9 @@ html {
     font-family: var(--font-invitation);
 }
 
-.pop-up__login, .pop-up__password {
+.pop-up__description {
     display: block;
-    width: 200px;
+    width: 90%;
     height: 30px;
     margin: 15px 0 15px 0;
     outline: none;
@@ -65,31 +65,36 @@ html {
     letter-spacing: 0.3px;
 }
 
-.pop-up__login:focus:valid, .pop-up__password:focus:valid {
+.pop-up__description:focus {
     border: 1px solid var(--main-blue);
     outline: none;
     transition: 0.2s;
     background-color: var(--white);
 }
 
-.pop-up__login:focus:invalid {
-    outline: none;
-    transition: 0.3s;
-    background: rgba(218, 67, 83, 0.1);
-    border: 1px solid rgba(218, 67, 83, 0.4);
-}
-
-.pop-up__button {
+.pop-up__button-save {
     padding: 10px;
-    margin: 20px 0 30px 58px;
     border: none;
     background: var(--main-blue);
+}
+
+.pop-up__button-cancel {
+    padding: 10px;
+    border: none;
+}
+
+.pop-up__buttons {
+    display: flex;
+    margin: 20px 0 30px 0;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .pop-up__button:focus {
     opacity: 0.9;
 }
 
-/*.visible {*/
-/*    display: none;*/
-/*}*/
+.pop-up__upper {
+    width: 90%;
+    margin: 0 auto;
+}
